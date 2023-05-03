@@ -13,10 +13,5 @@ def index():
     return make_response('usuarios')
 
 
-@app.route('/productos', methods=['GET'])
-def index():
-    return make_response('productos')
-
-
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=4000, debug=True)
