@@ -8,9 +8,14 @@ def index():
     return make_response('hola')
 
 
-@app.route('/usuarios', methods=['GET'])
+@app.route('/usuario', methods=['GET'])
 def index():
     return make_response('usuarios')
+
+
+@app.route('/productos', methods=['GET'])
+def index():
+    return make_response('productos')
 
 
 if __name__ == '__main__':
