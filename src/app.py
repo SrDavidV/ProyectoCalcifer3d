@@ -1,0 +1,17 @@
+from flask import Flask, make_response
+
+app = Flask(__name__)
+
+
+@app.route('/', methods=['GET'])
+def index():
+    return make_response('hola')
+
+
+@app.route('/usuarios', methods=['GET'])
+def index():
+    return make_response('usuarios')
+
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=4000, debug=True)
